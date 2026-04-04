@@ -1,0 +1,154 @@
+/* Typography styles for blog post content */
+
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.blog-post-content h1 {
+  font-size: 1.875rem;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.blog-post-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.4rem;
+}
+
+.blog-post-content h3 {
+  font-size: 1.25rem;
+}
+
+.blog-post-content h4 {
+  font-size: 1.1rem;
+}
+
+.blog-post-content p {
+  margin-bottom: 1.5rem;
+  line-height: var(--line-height-base);
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.blog-post-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.blog-post-content li > ul,
+.blog-post-content li > ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.blog-post-content blockquote {
+  border-left: 4px solid var(--color-border);
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.blog-post-content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Inline code */
+.blog-post-content code {
+  font-family: var(--font-code);
+  font-size: 0.875em;
+  background: var(--color-code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+}
+
+/* Code blocks (PrismJS) */
+.blog-post-content pre {
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  overflow: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.blog-post-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Tables */
+.blog-post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.9rem;
+}
+
+.blog-post-content th,
+.blog-post-content td {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.blog-post-content th {
+  background: var(--color-code-bg);
+  font-weight: 600;
+}
+
+.blog-post-content tr:nth-child(even) {
+  background: var(--color-code-bg);
+}
+
+/* Images in posts */
+.blog-post-content img {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+}
+
+/* Horizontal rule */
+.blog-post-content hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+/* Strong & em */
+.blog-post-content strong {
+  font-weight: 700;
+}
+
+.blog-post-content em {
+  font-style: italic;
+}
+
+/* Links in content */
+.blog-post-content a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-post-content a:hover {
+  color: var(--color-link-hover);
+}
