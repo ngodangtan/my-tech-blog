@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Blog RSS Feed]]></title><description><![CDATA[A personal technical blog about mobile, AI, and clean code.]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2026 13:26:32 GMT</lastBuildDate><item><title><![CDATA[Getting Started with Gatsby in 2025]]></title><description><![CDATA[A practical guide to setting up a Gatsby blog from scratch — covering setup, markdown, and deployment to GitHub Pages.]]></description><link>https://felixngo.github.io/getting-started-gatsby/</link><guid isPermaLink="false">https://felixngo.github.io/getting-started-gatsby/</guid><pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before you start, make sure you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js &gt;= 18&lt;/li&gt;
+&lt;li&gt;npm &gt;= 9&lt;/li&gt;
+&lt;li&gt;A GitHub account (for deployment)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Step 1: Install Gatsby CLI&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-g&lt;/span&gt; gatsby-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Verify the install:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gatsby &lt;span class=&quot;token parameter variable&quot;&gt;--version&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Step 2: Create a new site&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gatsby new my-blog
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; my-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Step 3: Start the development server&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Visit &lt;code class=&quot;language-text&quot;&gt;http://localhost:8000&lt;/code&gt; — your blog is live locally!&lt;/p&gt;
+&lt;p&gt;You’ll also get GraphiQL at &lt;code class=&quot;language-text&quot;&gt;http://localhost:8000/___graphql&lt;/code&gt; — a useful tool for exploring your data.&lt;/p&gt;
+&lt;h2&gt;Step 4: Add your first post&lt;/h2&gt;
+&lt;p&gt;Create a file at &lt;code class=&quot;language-text&quot;&gt;content/blog/my-first-post/index.md&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;title: &quot;My First Post&quot;
+date: &quot;2025-01-15&quot;
+description: &quot;Hello from my Gatsby blog!&quot;
+tags: [&quot;meta&quot;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Hello world&lt;/span&gt;
+
+This is my first blog post.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Gatsby hot-reloads, so you’ll see it instantly.&lt;/p&gt;
+&lt;h2&gt;Step 5: Build for production&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gatsby build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The output goes to &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt;. You can preview it with:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gatsby serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Step 6: Deploy to GitHub Pages&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; gh-pages --save-dev
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This builds the site and pushes it to the &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch. Enable GitHub Pages in your repo settings (source: &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch) and you’re live.&lt;/p&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;gatsby clean&lt;/code&gt; when you hit weird caching issues&lt;/li&gt;
+&lt;li&gt;Keep your frontmatter consistent — Gatsby’s GraphQL schema is inferred from your content&lt;/li&gt;
+&lt;li&gt;PrismJS themes are easy to swap — just change the import in &lt;code class=&quot;language-text&quot;&gt;Layout.js&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy blogging!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World — Why I Started This Blog]]></title><description><![CDATA[The first post. My motivation for starting a technical blog and what to expect.]]></description><link>https://felixngo.github.io/hello-world/</link><guid isPermaLink="false">https://felixngo.github.io/hello-world/</guid><pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Why blog in 2025?&lt;/h2&gt;
+&lt;p&gt;Every developer should write. Not because the world needs another blog — there are plenty — but because writing forces clarity. When you can’t explain something simply, you don’t really understand it.&lt;/p&gt;
+&lt;p&gt;I’ve been coding for years, taking notes in scattered files, bookmarking articles I never revisit. This blog is me finally organizing those thoughts into something readable and shareable.&lt;/p&gt;
+&lt;h2&gt;What I’ll write about&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Swift &amp;#x26; iOS&lt;/strong&gt; — native mobile development, SwiftUI, Swift concurrency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kotlin &amp;#x26; Android&lt;/strong&gt; — Jetpack Compose, cross-platform thinking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt; — on-device ML experiments with Core ML and ONNX&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minimalism&lt;/strong&gt; — in code and in life&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Who is this for?&lt;/h2&gt;
+&lt;p&gt;Primarily for myself — to solidify my understanding and create a record I can look back on. But if you’re a developer interested in mobile, AI, or clean engineering, hopefully something here is useful to you too.&lt;/p&gt;
+&lt;h2&gt;How often?&lt;/h2&gt;
+&lt;p&gt;No commitments. When I have something worth saying.&lt;/p&gt;
+&lt;p&gt;Stay tuned.&lt;/p&gt;</content:encoded></item></channel></rss>
