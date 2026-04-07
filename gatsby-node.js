@@ -58,7 +58,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode })
+    const filePath = createFilePath({ node, getNode })
+    const date = node.frontmatter.date
+    const year = new Date(date).getFullYear()
+    // Produces slugs like /2026/getting-started-gatsby/
+    const slug = `/${year}${filePath}`
     createNodeField({ name: `slug`, node, value: slug })
   }
 }
