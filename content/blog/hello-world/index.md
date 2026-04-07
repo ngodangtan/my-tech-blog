@@ -2,7 +2,7 @@
 title: "Hello World — Why I Started This Blog"
 date: "2025-01-01"
 description: "The first post. My motivation for starting a technical blog and what to expect."
-tags: ["personal", "blogging"]
+tags: ["personal", "blogging", "Algorithm", "leetcode"]
 ---
 
 ## Why blog in 2025?
