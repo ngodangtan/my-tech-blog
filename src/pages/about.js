@@ -7,7 +7,7 @@ const AboutPage = () => {
     <Layout>
       <SEO
         title="About"
-        description="About Felix Ngo — mobile developer, minimalist, and writer."
+        description="About Tan Ngo — mobile developer, minimalist, and writer."
       />
       <div className="about-page">
         <h1>About</h1>
@@ -29,7 +29,7 @@ const AboutPage = () => {
         </div>
 
         <p>
-          Hi, I'm <strong>Felix Ngo</strong> — a mobile developer with a passion
+          Hi, I'm <strong>Tan Ngo</strong> — a mobile developer with a passion
           for clean code, minimal design, and continuous learning.
         </p>
 

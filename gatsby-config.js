@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `My Blog`,
     author: {
-      name: `Felix Ngo`,
+      name: `Tan Ngo`,
       summary: `Mobile developer. Minimalist.`,
     },
     description: `A personal technical blog about mobile, AI, and clean code.`,

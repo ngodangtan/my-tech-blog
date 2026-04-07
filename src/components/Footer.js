@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <p>
-          © {new Date().getFullYear()} Felix Ngo ·{" "}
+          © {new Date().getFullYear()} Tan Ngo ·{" "}
           <a
             href="https://github.com/felixngo"
             target="_blank"
