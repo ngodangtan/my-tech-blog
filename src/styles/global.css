@@ -249,6 +249,13 @@ main {
   border: 1px solid var(--color-border);
   border-radius: 99px;
   color: var(--color-text-muted);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.tag:hover {
+  border-color: var(--color-link);
+  color: var(--color-link);
+  text-decoration: none;
 }
 
 /* Blog Post */

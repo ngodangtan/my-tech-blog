@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => {
         <nav>
           <ul className="header-nav">
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/tags">Tags</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
         </nav>

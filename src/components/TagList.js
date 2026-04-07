@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const TagList = ({ tags }) => {
   if (!tags || tags.length === 0) return null
@@ -6,9 +7,14 @@ const TagList = ({ tags }) => {
   return (
     <div className="tag-list">
       {tags.map(tag => (
-        <span key={tag} className="tag">
-          {tag}
-        </span>
+        <Link
+          key={tag}
+          to={`/tags/${tag.toLowerCase().replace(/\s+/g, `-`)}/`}
+          className="tag"
+          style={{ textDecoration: "none" }}
+        >
+          #{tag}
+        </Link>
       ))}
     </div>
   )
