@@ -64,7 +64,7 @@ One of Swift's most distinctive features is **optionals** — a type-safe way to
 ```swift
 var username: String? = nil   // optional String — might be nil
 
-username = "felixngo"
+username = "ngodangtan"
 
 if let name = username {
     print("Hello, \(name)!")  // safely unwrapped

@@ -7,7 +7,7 @@ const Footer = () => {
         <p>
           © {new Date().getFullYear()} Tan Ngo ·{" "}
           <a
-            href="https://github.com/felixngo"
+            href="https://github.com/ngodangtan"
             target="_blank"
             rel="noopener noreferrer"
           >

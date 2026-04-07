@@ -7,10 +7,10 @@ module.exports = {
       summary: `Mobile developer. Minimalist.`,
     },
     description: `A personal technical blog about mobile, AI, and clean code.`,
-    siteUrl: `https://felixngo.github.io`,
+    siteUrl: `https://ngodangtan.github.io`,
     social: {
-      twitter: `felixngo`,
-      github: `felixngo`,
+      twitter: `ngodangtan`,
+      github: `ngodangtan`,
     },
   },
   plugins: [

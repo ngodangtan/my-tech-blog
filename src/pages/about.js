@@ -60,7 +60,7 @@ const AboutPage = () => {
         <p>
           The best way to reach me is via{" "}
           <a
-            href="https://github.com/felixngo"
+            href="https://github.com/ngodangtan"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,7 +68,7 @@ const AboutPage = () => {
           </a>{" "}
           or{" "}
           <a
-            href="https://twitter.com/felixngo"
+            href="https://twitter.com/ngodangtan"
             target="_blank"
             rel="noopener noreferrer"
           >
